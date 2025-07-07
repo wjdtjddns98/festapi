@@ -1,5 +1,0 @@
-
-
-print(
-    "asdffadsfdsaafdasfadsfadsfjkhasdfkjadshlfijadshflkjadshflkjadshflkadjshflkadjsfhladskjfhlasdkjfhalsdkjfhasdlkjfhadslkjfhasdlkfjhasdflajdsfa Short"
-)
