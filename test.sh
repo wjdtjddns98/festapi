@@ -1,7 +1,7 @@
 set -eo pipefail
 
 COLOR_GREEN=`tput setaf 2;`
-COLOR_NC=`tput sgr0;`
+COLOR_NC=`tput sgr0;` # No Color
 
 echo "Starting black"
 poetry run black .
@@ -21,4 +21,4 @@ poetry run coverage run -m pytest
 poetry run coverage report -m
 poetry run coverage html
 
-echo "${COLOR_GREEN}All test passed successfully!${COLOR_NC}"
+echo "${COLOR_GREEN}All tests passed successfully!${COLOR_NC}"
