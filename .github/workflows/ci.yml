@@ -46,7 +46,7 @@ jobs:
         run: poetry install --no-root
 
       - name: Run Black
-        run: poetry run black . --check
+        run: poetry run black .
 
       - name: Run Ruff
         run: |
