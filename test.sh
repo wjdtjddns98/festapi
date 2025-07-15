@@ -13,7 +13,7 @@ poetry run ruff check --fix
 echo "OK"
 
 echo "Mypy 실행"
-poetry run mypy .
+poetry run dmypy run -- .
 echo "OK"
 
 echo "커버리지 체크"
