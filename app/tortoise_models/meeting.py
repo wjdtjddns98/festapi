@@ -14,3 +14,7 @@ class MeetingModel(BaseModel, Model):
     @classmethod
     async def create_meeting(cls, url_code: str) -> "MeetingModel":
         return await cls.create(url_code=url_code)
+
+    @classmethod
+    async def get_by_url_code(cls, url_code: str) -> "MeetingModel | None":
+        return await cls.filter(url_code=url_code).get_or_none()

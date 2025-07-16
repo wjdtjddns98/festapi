@@ -11,10 +11,10 @@ class Env(StrEnum):
 
 class Config(BaseSettings):
     ENV: Env = Env.LOCAL
-    MYSQL_HOST: str = "127.0.0.1"
-    MYSQL_PORT: int = 3306
+    MYSQL_HOST: str = "localhost"
+    MYSQL_PORT: int = 13306
     MYSQL_USER: str = "root"
     MYSQL_PASSWORD: str = "1234"
-    MYSQL_DB: str = "when2meet"
+    MYSQL_DB: str = "when2meet_vod"
     MYSQL_CONNECT_TIMEOUT: int = 5
     CONNECTION_POOL_MAXSIZE: int = 30
